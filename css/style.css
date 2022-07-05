@@ -56,9 +56,9 @@ body{
 }
 
 @keyframes headerCarrusel{
-	0%{background-image: url(imagenes/flores.jpg)}
-	50%{background-image: url(imagenes/reiki.png)}
-	100%{background-image: url(imagenes/tarot1.jpg)}
+	0%{background-image: url(../imagenes/flores.jpg)}
+	50%{background-image: url(../imagenes/reiki.png)}
+	100%{background-image: url(../imagenes/tarot1.jpg)}
 }
 
 header{
