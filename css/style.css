@@ -13,7 +13,7 @@ html{
 }
 
 body{
-   background-image: url(Imagenes/fondo2.jpg);
+   background-image: url(../imagenes/fondo2.jpg);
    background-repeat: repeat;
    background-attachment:fixed;
    background-size: 300px;
@@ -56,9 +56,9 @@ body{
 }
 
 @keyframes headerCarrusel{
-	0%{background-image: url(Imagenes/flores.jpg)}
-	50%{background-image: url(Imagenes/reiki.png)}
-	100%{background-image: url(Imagenes/tarot1.jpg)}
+	0%{background-image: url(imagenes/flores.jpg)}
+	50%{background-image: url(imagenes/reiki.png)}
+	100%{background-image: url(imagenes/tarot1.jpg)}
 }
 
 header{
