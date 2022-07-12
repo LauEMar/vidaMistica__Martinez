@@ -1,204 +1,117 @@
-/*Mi tipografía*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,400;8..144,500&family=Roboto+Slab:wght@200;300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,400;8..144,500&family=Roboto:wght@300;400;500&display=swap");
+nav {
+  background-color: #42033d;
+  padding: 20px 30px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  nav img {
+    width: 100px;
+    float: left;
+    margin-left: 20px; }
+  nav ul {
+    display: flex; }
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 10px;
+      margin-top: 10px; }
+      nav ul li a {
+        color: #E7D0F1;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        display: inline-block;
+        padding: 20px 20px;
+        margin-right: 20px; }
+        nav ul li a:hover {
+          color: white; }
 
-/*Reset*/
-*{
-	font-family: Roboto, sans-serif;
-    padding: 0;
-    margin: 0;
-} 
+header {
+  width: 99vw;
+  height: 100vh;
+  animation-name: headerCarrusel;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  background-size: cover;
+  animation-timing-function: ease-in-out; }
 
-html{
-	font-size:62.5% ;
-}
+@keyframes headerCarrusel {
+  0% {
+    background-image: url(../imagenes/flores.jpg); }
+  50% {
+    background-image: url(../imagenes/reiki.png); }
+  100% {
+    background-image: url(../imagenes/tarot1.jpg); } }
 
-body{
-   background-image: url(../imagenes/fondo2.jpg);
-   background-repeat: repeat;
-   background-attachment:fixed;
-   background-size: 300px;
-   width: 100%;
-   overflow-x: hidden;
+* {
+  margin: 0;
+  padding: 0; }
 
-}
+html {
+  font-size: 62.5%; }
 
-/*Grids*/
+body {
+  background-image: url(../imagenes/fondo2.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 300px;
+  width: 100%;
+  overflow-x: hidden; }
 
-.gridContenedor{
-	width: 100vw;
-	height:100vh;
-	display: grid;
-	grid-template-columns: 1fr;
-		grid-template-rows: repeat(5, 1fr);
-		grid-template-areas: 
-		"nav"
-		"header"
-		"main"
-		"aside"
-		"footer";
-}
+h1 {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #42033d;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  text-align: center; }
 
-.mainNav{
-	grid-area: nav;
-}
+h3 {
+  color: #42033d;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; }
 
-.headerHeroeimg{
-	grid-area: header;
+p {
+  color: #E7D0F1;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  text-align: center; }
 
-}
+.fondoDestacados {
+  background-color: #42033d;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px; }
+  .fondoDestacados figure {
+    text-align: center; }
+    .fondoDestacados figure img {
+      width: 70%;
+      margin-top: 30px;
+      border-radius: 50%; }
+      .fondoDestacados figure img:hover {
+        transform: scale(1.03); }
+    .fondoDestacados figure figcaption {
+      font-size: 1.5rem;
+      color: white;
+      padding: 10px 0;
+      font-family: "Roboto", sans-serif; }
 
-.footerPie{
-	grid-area: footer;
-}
-
-.mainProductos{
-	grid-area: main;
-
-}
-
-
-/*Inicia Nav*/
-
-.logo{
-width: 100px;
-float: left;
-margin-left: 20px;
-}
-
-nav{
-	background-color:rgb(71, 3, 67);
-	padding: 20px 30px;
-	height: 70px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-nav ul{
-	display: flex;
-}
-
-nav ul li{
-    list-style: none;
-	display: inline-block;
-	margin-right: 10px;
-	margin-top: 10px;
-}
-
-nav ul li a{
-	color: #E7D0F1;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-family:'Roboto', sans-serif;
-    font-weight: 400;
-    display: inline-block;
-    padding: 20px 20px;
-    margin-right: 20px;
-}
-
-nav ul li a:hover{
-	color:white;
-}
-
-
-
-/*Fin Nav*/
-/*Inicio Header*/
-
-@keyframes headerCarrusel{
-	0%{background-image: url(../imagenes/flores.jpg)}
-	50%{background-image: url(../imagenes/reiki.png)}
-	100%{background-image: url(../imagenes/tarot1.jpg)}
-}
-
-header{
-	width: 100vw;
-	height: 100vh;
-	animation-name:headerCarrusel ;
-	animation-duration: 6s;
-	animation-iteration-count: infinite;
-	background-size: cover;
-	animation-timing-function: ease-in-out;
-}
-
-/*Index Main*/
-
-.fondoDestacados{
-	background-color: rgba(66, 3, 61, 1.0);
-	display: flex;
-	justify-content: space-between;
-	margin-top: 0px;
-}
-
-
-p{
-	font-size: 1rem;
-	color: white ;
-	padding: 10px 0;
-	margin-bottom: 20px;
-	text-align: center;
-}
-
-figure{
-	text-align: center;
-}
-
-figure img{
-	width: 70%;
-	margin-top: 30px;
-	border-radius:50%;
-}
-
-figure figcaption{
-	font-size: 1.2rem;
-	color: white ;
-	padding: 10px 0;
-}
-
-
-h1{
-	font-family:'Roboto', serif;
-	font-weight: 500;
-	font-size: 2.5rem;
-	margin-bottom: 20px;
-	margin-top: 30px;
-	text-align: center;
-	color: rgba(66, 3, 61, 1.0);
-}
-
-p{
-	font-size: 1.3rem;
-	color: #E7D0F1 ;
-	padding: 10px 0;
-	margin-bottom: 20px;
-	text-align: center;
-}
-
-.scale:hover{
-	transform: scale(1.03);
-}
-
-/* footer */
-
-footer{
-   background-color: #E7D0F1;
-   margin-top: 2rem;
-   flex-direction: row-reverse;
-   align-items: center;
-   display: flex;
-   padding-top: 10px;
-   padding-bottom: 5px;
-  padding-right: 50px;
-}
-
-footer h3{
-	color: rgb(71, 3, 67);
-	font-size: 1.3rem;
-    font-family:'Roboto', sans-serif;
-    font-weight: 500;
-}
-
-footer img{
-	width: 35px;
-	padding-right: 5px;
-}
+footer {
+  background-color: #E7D0F1;
+  margin-top: 2rem;
+  flex-direction: row-reverse;
+  align-items: center;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-right: 50px; }
+  footer img {
+    width: 35px;
+    padding-right: 5px; }
