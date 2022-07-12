@@ -1,0 +1,15 @@
+header{
+	width: 99vw;
+	height: 100vh;
+	animation-name:headerCarrusel ;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
+	background-size: cover;
+	animation-timing-function: ease-in-out;
+	@keyframes headerCarrusel{
+		0%{background-image: url(../imagenes/flores.jpg)}
+		50%{background-image: url(../imagenes/reiki.png)}
+		100%{background-image: url(../imagenes/tarot1.jpg)}
+	}
+}
+

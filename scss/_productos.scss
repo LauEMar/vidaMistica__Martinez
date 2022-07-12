@@ -1,0 +1,25 @@
+.fondoDestacados{
+	background-color: $mainColor;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0px;
+		figure{
+			text-align: center;
+			img{
+				width: 70%;
+				margin-top: 30px;
+				border-radius:50%;
+				&:hover{
+					transform: scale(1.03);
+				}
+			}
+			figcaption{
+				font-size: $textMd;
+				color: $white ;
+				padding: 10px 0;
+				font-family: $mainFont;
+
+			}
+		}
+
+}
