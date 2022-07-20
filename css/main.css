@@ -1,33 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,400;8..144,500&family=Roboto:wght@300;400;500&display=swap");
-nav {
-  background-color: #42033d;
-  padding: 20px 30px;
-  height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  nav img {
-    width: 100px;
-    float: left;
-    margin-left: 20px; }
-  nav ul {
-    display: flex; }
-    nav ul li {
-      list-style: none;
-      display: inline-block;
-      margin-right: 10px;
-      margin-top: 10px; }
-      nav ul li a {
-        color: #E7D0F1;
-        text-decoration: none;
-        font-size: 1.5rem;
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        display: inline-block;
-        padding: 20px 20px;
-        margin-right: 20px; }
-        nav ul li a:hover {
-          color: white; }
+.btn-color, .btnTerapia {
+  font-weight: 500;
+  font-size: 1.5rem; }
+  .btn-color:hover, .btnTerapia:hover {
+    background-color: #E7D0F1; }
+
+.bgVioleta {
+  background-color: #42033d; }
+
+#btn-menu {
+  color: white;
+  font-size: 18px;
+  background-color: #E7D0F1;
+  margin-right: 30px; }
+
+#botonera img {
+  width: 100px;
+  margin-left: 30px; }
+
+.navColor {
+  color: #E7D0F1;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 30px 30px;
+  margin-right: 30px; }
+  .navColor:hover {
+    color: white; }
 
 header {
   width: 99vw;
@@ -61,7 +60,8 @@ body {
   width: 100%;
   overflow-x: hidden; }
 
-h1 {
+h1,
+h4 {
   font-family: "Roboto", serif;
   font-weight: 500;
   font-size: 2rem;
@@ -77,12 +77,59 @@ h3 {
   font-weight: 300; }
 
 p {
-  color: #E7D0F1;
   font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #E7D0F1;
   padding: 10px 0;
   margin-bottom: 20px;
   text-align: center; }
+
+article p {
+  background-color: #E7D0F1;
+  text-align: center;
+  width: 50%;
+  height: auto;
+  border: none;
+  overflow: auto;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #42033d;
+  font-family: "Roboto", sans-serif;
+  margin: 10px auto;
+  padding: 20px 20px; }
+
+.form-label {
+  color: #E7D0F1; }
+
+iframe {
+  width: 100%; }
+
+.labelOrden {
+  margin-left: 10px; }
+
+input {
+  outline: rgba(0, 0, 0, 0);
+  border-radius: 8px; }
+  input:hover {
+    border-color: #42033d; }
+
+.namaste {
+  width: 100%;
+  margin-left: 7px; }
+
+footer {
+  background-color: #E7D0F1;
+  margin-top: 2rem;
+  flex-direction: row-reverse;
+  align-items: center;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-right: 50px; }
+  footer img {
+    width: 35px;
+    padding-right: 5px; }
 
 .fondoDestacados {
   background-color: #42033d;
@@ -103,15 +150,100 @@ p {
       padding: 10px 0;
       font-family: "Roboto", sans-serif; }
 
-footer {
+.btn-color {
+  background-color: #E7D0F1; }
+
+.imagenTerapias {
+  width: 70%;
+  border-radius: 20px;
+  margin-top: 15px; }
+
+.contenedorTerapias {
   background-color: #E7D0F1;
-  margin-top: 2rem;
-  flex-direction: row-reverse;
-  align-items: center;
   display: flex;
+  justify-content: space-between;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  text-align: center; }
+
+.btnTerapia {
+  background-color: #42033d;
+  color: #E7D0F1;
+  text-align: center; }
+
+.terapiaTitulo {
+  font-size: 1.5rem;
+  color: #42033d;
+  padding: 10px 0;
+  text-align: center; }
+
+.fondoSection {
+  background-color: #42033d;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0px;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.imagenCaras {
+  margin-top: 20px;
   padding-top: 10px;
-  padding-bottom: 5px;
-  padding-right: 50px; }
-  footer img {
-    width: 35px;
-    padding-right: 5px; }
+  margin-left: 110px;
+  border-radius: 50%; }
+
+.fondoTexto {
+  background-color: #42033d;
+  margin-left: 8px;
+  margin-right: 8px; }
+
+.textLeft {
+  text-align: left; }
+
+.categorias {
+  background-color: #E7D0F1;
+  color: #42033d;
+  padding: 10px 30px;
+  line-height: 1.8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+  .categorias form {
+    margin-bottom: 20px; }
+  .categorias img {
+    margin-bottom: 30px; }
+
+figure {
+  text-align: center; }
+  figure img {
+    width: 70%;
+    margin-top: 30px;
+    border-radius: 50%; }
+    figure img:hover {
+      transform: scale(1.03); }
+  figure figcaption {
+    font-size: 1.5rem;
+    color: white;
+    padding: 10px 0;
+    font-family: "Roboto", sans-serif; }
+
+ul li {
+  list-style: none; }
+  ul li a {
+    text-decoration: none;
+    color: #42033d; }
+    ul li a:hover {
+      font-weight: 500;
+      color: #42033d; }
+
+form select {
+  background-color: #42033d;
+  color: white;
+  border-color: white;
+  margin-top: 25px; }
