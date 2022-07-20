@@ -1,0 +1,25 @@
+.form-label,
+{
+color: $secondaryColor;
+}
+
+iframe{
+   width: 100%;
+}
+
+.labelOrden{
+	margin-left: 10px;
+}
+
+input{
+	outline: $outline;
+	border-radius: 8px;
+	&:hover{ 
+		border-color: $mainColor;
+	}
+}
+
+.namaste{
+	width: 100%;
+	margin-left: 7px;
+}

@@ -8,7 +8,7 @@ html{
 }
 
 body{
-   background-image: url(../Imagenes/fondo2.jpg);
+   background-image: url(../imagenes/fondo2.jpg);
    background-repeat: repeat;
    background-attachment:fixed;
    background-size: 300px;
@@ -17,7 +17,8 @@ body{
 
 }
 
-h1{
+h1,
+h4{
 	font-family: $secondaryFont;
 	font-weight: $bold;
 	font-size: $textLg;
@@ -29,16 +30,28 @@ h1{
 
 h3{
 	color: $mainColor;
-	font-size: $textMd;
-	font-family: $mainFont;
-	font-weight: $ligth;
+	@include texto($textMd, $mainFont, $ligth)
 }
 
 p{
+	@include texto($textMd, $mainFont, $ligth)
 	color: $secondaryColor;
-	font-size: $textMd;
-	font-family: $mainFont;
 	padding: 10px 0;
 	margin-bottom: 20px;
 	text-align: center;
+}
+
+article p{
+	background-color: $secondaryColor;
+	text-align: center;
+	width:50%;
+	height: auto;
+	border: none;
+   overflow: auto;
+   font-size: $textMd;
+   font-weight: $regular;
+   color: map-get($map: $estilos, $key: color);
+   font-family: $mainFont;
+   margin: 10px auto;
+	padding: 20px 20px;
 }

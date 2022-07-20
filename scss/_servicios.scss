@@ -1,0 +1,30 @@
+.imagenTerapias{
+	width: 70%;
+   border-radius: 20px;
+   margin-top:15px;
+ }
+
+.contenedorTerapias{
+   background-color: $secondaryColor;
+   display: flex;
+ 	justify-content: space-between;
+	margin-top: 0px;
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-right: 20px;
+	text-align: center
+}
+
+.btnTerapia{
+	@extend %botones;
+	background-color: $mainColor;
+	color: $secondaryColor;
+	text-align: center;
+}
+
+.terapiaTitulo{
+	font-size: $textMd;
+	color: $mainColor;
+	padding: 10px 0;
+	text-align: center;
+}

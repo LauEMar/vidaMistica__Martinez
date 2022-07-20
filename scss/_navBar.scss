@@ -1,39 +1,32 @@
-nav{
-	background-color: $mainColor;
-	padding: 20px 30px;
-	height: 70px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	img{
-		width: 100px;
-		float: left;
-		margin-left: 20px;
-	}
-	ul{
-		display: flex;
-		li{
-			list-style: none;
-			display: inline-block;
-			margin-right: 10px;
-			margin-top: 10px;
-			a{
-				color: $secondaryColor;
-				text-decoration: none;
-				font-size: $textMd;
-				font-family: $mainFont;
-				font-weight: $regular;
-				display: inline-block;
-   				padding: 20px 20px;
-    			margin-right: 20px;
-    			&:hover{
-    				color:$white;
-    			}
 
-			}
-
-		}
-	}
+.bgVioleta{
+	background-color:$mainColor;
 }
+
+#btn-menu{
+    color: $white;
+    font-size: 18px;
+    background-color:  $secondaryColor;
+    margin-right: 30px;
+}
+
+#botonera img{
+	width: 100px;
+	margin-left: 30px;
+}
+
+.navColor{
+	color: $secondaryColor;
+	font-size: $textMd;
+	font-family:$mainFont;
+   font-weight: $regular;
+   padding: 30px 30px;
+   margin-right: 30px;
+   &:hover{
+    	color:$white;
+    }
+}
+
+
 
 

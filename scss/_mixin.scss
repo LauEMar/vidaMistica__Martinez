@@ -1,0 +1,6 @@
+@mixin texto($size, $family, $weight){
+	font-size: $size;
+	font-family: $family;
+	font-weight: $weight;
+}
+

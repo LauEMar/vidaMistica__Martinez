@@ -21,5 +21,9 @@
 
 			}
 		}
+}
 
+.btn-color{
+	background-color: $secondaryColor;
+	@extend %botones;
 }
